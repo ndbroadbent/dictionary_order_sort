@@ -14,4 +14,8 @@ class TestArrayDictSort < MiniTest::Unit::TestCase
 
     assert_equal ruby_sort, system_sort
   end
+
+  def test_set
+    assert Set.new.respond_to?(:dict_sort)
+  end
 end
