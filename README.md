@@ -4,9 +4,7 @@
 
 Sorts an array of strings in the same manner as the Linux `sort` command running with the `--dictionary-order` option. Only blanks and alphanumeric characters are considered.
 
-I created this gem after trying to use the `comm` command in a Capistrano recipe, with the files being sorted in Ruby. `comm` requires the input files to be sorted using the collating sequence specified by `LC_COLLATE', and this defaults to dictionary sort.
-
-In the end, I just piped the files to the Linux `sort` command, but I decided to write it anyway and release it as a tiny gem.
+I created this gem because I needed to use the `comm` command in a Capistrano recipe, and wanted to sort the list of files in Ruby. `comm` requires the input files to be sorted using the collating sequence specified by `LC_COLLATE', and this defaults to dictionary sort.
 
 # Installation
 
