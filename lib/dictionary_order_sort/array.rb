@@ -5,8 +5,9 @@ class Array
   def dict_sort
     sorting_cache = {}
     sort do |a, b|
-      c, d = [a, b].map do |f|
-        sorting_cache[f] ||= f.gsub /\W|[_\s]/, ''
+      c, d = [a, b].map do |el|
+        str = el.to_s
+        sorting_cache[str] ||= str.gsub /\W|[_\s]/, ''
       end
       c <=> d
     end
