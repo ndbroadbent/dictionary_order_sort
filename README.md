@@ -16,7 +16,7 @@ gem 'dictionary_order_sort'
 
 # Usage
 
-You can now use the `dict_sort` method on any arrays. Array elements must be strings, or respond to `to_s`.
+You can now use the `dict_sort` method on arrays or sets. Array elements must be strings, or respond to `to_s`.
 
 Use it like this:
 
